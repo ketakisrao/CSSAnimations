@@ -4,6 +4,7 @@
     height: 90px;
     animation: heartbeat 1s infinite;
     margin:0 auto;
+    margin-top: -200px;
 }
 #heart:before,
 #heart:after {
@@ -53,4 +54,18 @@
   {
     transform: scale( .75 );
   }
+}
+body {
+  background-color: #000000;
+}
+.text {
+  font-size: 23px;
+  font-family: text;
+}
+text {
+  fill: #FFFFFF;
+}
+@font-face {
+    font-family: text;
+    src: url(CHERI___.TTF);
 }
