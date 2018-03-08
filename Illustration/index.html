@@ -1,9 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Hey There!</title>
+	<style type="text/css">
+		.speech-bubble {
+			position: absolute;
+			top: 0;
+			left: 200px;
+			background-color: #00d2d3;
+			color: #01a3a4;
+			border-radius: 6px 6px 6px 0px;
+			height: 100px;
+			width: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.speech-text {
+			height: 85px;
+			width: 85px;
+			color: #ffffff;
+			background-color: #01a3a4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			border-radius: 6px 6px 6px 6px;
+		}
+		.speech-bubble:before {
+			content: '';
+			background-color: transparent;
+			position: absolute;
+			height: 0;
+			width: 0;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-right:10px solid #01a3a4;
+			top: 80px;
+			left: -10px;
+		}
+	</style>
 </head>
 <body>
 <img src="myAnim.gif" height=480/>
+<div class="speech-bubble">
+	<div class="speech-text">
+		Good Morning!
+	</div></div>
 </body>
 </html>
